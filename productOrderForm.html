@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductOrderForm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <form action="/action_page.php" >
+            <div class="blur">
+                <fieldset>
+                <h2>Product Order Form</h2>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter name...">
+                <br><br>
+                <label for="address">Address</label><br>
+                <input type="text" id="email" name="email" required placeholder="Enter address..." >
+                <br><br>
+                <label for="select">Products</label><br>
+                <select name="selection" id="selection">
+                    <option class="ph" value="" disabled selected>Select your option...</option>
+                    <option value="necklace">Necklace</option>
+                    <option value="Watch">Watch</option>
+                    <option value="Earrings">Earrings</option>
+                    <option value="Rings">Rings</option>
+                    <option value="Bracelet">Bracelet</option>
+                </select>
+                <br><br>
+                <label for="quantity">Quantity</label><br>
+                <input type="number" id="qty" name="quantity" required placeholder="Enter Quantity...">
+                <br><br>
+                <label for="payMethod">Payment Method</label><br>
+                <div class="radio-div">
+                    <div>
+                        <input type="radio" id="credit" name="paymethod" value="Credit Card">
+                        <label class="radio"  for="credit">Credit Card</label>
+                        
+                    </div>
+                    <div>
+                        <input type="radio" id="cod" name="paymethod" value="COD">
+                        <label class="radio" for="cod">COD</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="PayPal" name="PayPal" value="PayPal">
+                        <label class="radio" for="PayPal">PayPal</label>
+                    </div>
+                </div>
+                <input type="submit" name="submit">
+                        </fieldset>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
